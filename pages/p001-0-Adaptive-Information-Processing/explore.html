@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../../css/custom.css">
 
     <title>Strega Health for EMDR Therapy</title>
-    <meta name="description" content="xxSHORT_SUMMARYxx" >
+    <meta name="description" content="How EMDR therapy and Adaptive Information Processing help the brain heal from trauma and difficult memories.">
+
 </head>
 <body>
 <div class="page-wrapper">
@@ -19,29 +20,27 @@
         <div class="site-header">
             <div class="header-center">
                 <div class="site-title" id="top">
-                    Strega<img src="../../assets/images/logo.webp" alt="Strega Health logo" width="300">Health
+                    <span>Strega</span>
+                    <img src="../../assets/images/logo.webp" alt="Strega Health logo" width="300">
+                    <span>Health</span>
                 </div>
+
             </div>
         </div>
-        <nav aria-label="Primary">
+        <nav role="navigation" aria-label="Primary">
             <a href="../../index.html">Home</a>
             <a href="../../strega-contact.html">Contact</a>
         </nav>
+
     </header>
 
 
     <main>
 
-        <section class="intro-container">
-            <div class="intro-item">
-                <h3>Adaptive Information Processing</h3>
-            </div>
-        </section>
-
         <section class="content-container">
           <div class="content-item">
+            <h1>Adaptive Information Processing</h1>
             <h2>Trauma EMDR</h2>
-
             <h3>How memories are made</h3>
 
             <figure>
@@ -68,8 +67,6 @@
 
              <figure>
               <img src="Image04.webp" alt="Not broken">
-              <figcaption>
-              </figcaption>
             </figure>
 
           </div>
@@ -77,7 +74,7 @@
 
         <section class="cta-container">
             <article  class="cta-item">
-                <p><a href="strega-contact.html">Contact Aideen</a> for help for painful memories and difficult emotions.</p>
+                <p><a href="../../strega-contact.html">Contact Aideen</a> for help for painful memories and difficult emotions.</p>
             </article>
         </section>
     </main>
@@ -93,7 +90,7 @@
     </footer>
 
     <script>
-        fetch('strega-footer.html')
+        fetch('../../strega-footer.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
