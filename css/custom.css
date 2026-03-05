@@ -1,14 +1,25 @@
-
 /*Oakwood ltd Framework v3.0 custom.css */
 
 /* strega site specific */
 
-/* Overides */
-
-root: {
-
+/* Overrides */
+:root {
+  /* custom properties if needed */
 }
 
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--bg-inner); /* ivory */
+  min-height: 100vh;
+  padding-top: 1px;      /* prevents top margin collapse */
+  padding-bottom: 1px;   /* prevents bottom margin collapse */
+  overflow: hidden;      /* belt-and-braces containment */
+}
+
+.page-wrapper > * {
+  margin-top: 0;
+}
 
 @media (max-width: 768px) {
     .site-title {
