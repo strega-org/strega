@@ -12,69 +12,67 @@
     <meta name="description" content="EMDR therapy at Strega Health – support when the past keeps showing up." >
 </head>
 <body>
+<div class="page-wrapper">
+    <header>
+        <div class="site-header">
+            <div class="header-center">
+                <div class="site-title" id="top">
+                    Strega<img src="assets/images/logo.webp" alt="Strega Health logo" width="300">Health
+                </div>
+            </div>
+        </div>
 
-<header>
+         <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
+            <a href="strega-contact.html">Contact</a>
+        </nav>
+    </header>
 
-<div class="site-header">
-    <div class="header-center">
-        <div class="site-title"   id="top">
-            Strega<img src="assets/images/logo.webp" alt="Strega Health logo" width="300">Health
-    </div>
+    <main>
 
-     <nav aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
-        <a href="strega-contact.html">Contact</a>
-    </nav>
+        <section class="intro-container">
+            <div class="intro-item">
+                 <div class="site-title">EMDR</div>
+            </div>
+            <div class="intro-item">
+                 <h3>Therapy for Healing Trauma</h3>
+                 <p>EMDR can help you heal and move forward to a brighter future.</p>
+            </div>
 
+            <div class="intro-item">
+                <img src="assets/images/combined-conditions.webp" alt="Trauma">
+            </div>
+
+
+        </section>
+
+        <section class="cta-container">
+            <article  class="cta-item">
+                <p><a href="strega-contact.html">Contact Aideen</a> for help for painful memories and difficult emotions.</p>
+            </article>
+        </section>
+    </main>
+
+        <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+    <footer>
+        <div id="footer-placeholder">
+            <div class="item-footer">
+              <p>&copy; 2026 Strega Health Ref: ns</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        fetch('strega-footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading footer:', error));
+    </script>
 </div>
-
-</header>
-
-<main>
-
-    <section class="intro-container">
-        <div class="intro-item">
-             <div class="site-title">EMDR</div>
-        </div>
-        <div class="intro-item">
-             <h3>Therapy for Healing Trauma</h3>
-             <p>EMDR can help you heal and move forward to a brighter future.</p>
-        </div>
-
-        <div class="intro-item">
-            <img src="assets/images/combined-conditions.webp" alt="Trauma">
-        </div>
-
-
-    </section>
-
-    <section class="cta-container">
-        <article  class="cta-item">
-            <p><a href="strega-contact.html">Contact Aideen</a> for help for painful memories and difficult emotions.</p>
-        </article>
-    </section>
-</main>
-
-    <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-
-<footer>
-    <div id="footer-placeholder">
-        <div class="item-footer">
-          <p>&copy; 2026 Strega Health Ref: ns</p>
-        </div>
-    </div>
-</footer>
-
-<script>
-    fetch('strega-footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-</script>
-
 </body>
 </html>
 
