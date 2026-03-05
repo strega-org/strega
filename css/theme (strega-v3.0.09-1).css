@@ -1,0 +1,72 @@
+/*Oakwood ltd Framework v3.0.0  2026-02-25 */
+/* Brand: Variables declaration */
+
+/* General */
+:root {
+    --font-brand: Spectral, serif;
+
+    --bg-outer: #E6E2DD;
+    --bg-inner: ivory;
+    --bg-blockquote-table: honeydew;
+
+    --bg-nav-footer:#CF8584;
+    --text-nav:#6B4A3C;
+    --text-nav-hover:white;
+    --text-footer:white;
+
+    --bg-button: #CF8584;
+    --bg-button-hover: #CF8584;
+    --text-button:#2E1F1F;
+    --text-button-hover:white;
+    --button-radius: 25px;
+
+    --link-color: blue;
+    --link-hover-color: navy;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-lightitalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Spectral';
+  src: url('../assets/fonts/spectral-bolditalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
