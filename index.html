@@ -1,94 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
+<!--strega using Oakwood Framework v4.1.0 -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="template" content="v3.0">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/custom.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EMDR therapy at Strega Health – support when the past keeps showing up.">
     <title>EMDR Therapy | Strega Health – Heal Trauma and Move Forward</title>
-    <meta name="description" content="EMDR therapy at Strega Health – support when the past keeps showing up." >
+    <link rel="stylesheet" href="css/1-settings.css">
+    <link rel="stylesheet" href="css/2-base.css">
+    <link rel="stylesheet" href="css/3-components.css">
+    <link rel="stylesheet" href="css/4-utilities.css">
+    <link rel="stylesheet" href="css/5-custom.css">
 </head>
 <body>
 
+<!-- Top bar (if needed) -->
 <div class="page-wrapper">
-    <header>
-        <div class="site-header">
-            <div class="header-center">
-                <div class="site-title" id="top">
-                    <img src="assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
-                </div>
-            </div>
+    <!-- Header -->
+    <header class="site-header u-mb-sm">
+        <div class="header-center">
+            <img src="assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
         </div>
-
-         <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
-            <a href="strega-contact.html">Contact</a>
-        </nav>
     </header>
+
+    <!-- Navigation -->
+    <nav class= "u-mt-md">
+        <a href="index.html">Home</a>
+        <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
+        <a href="strega-contact.html" aria-current="page">Contact</a>
+    </nav>
 
 <main>
 
-<div class="intro-container">
 
-    <div class="intro-item">
-        <div class="site-title">EMDR</div>
-    </div>
+       <!-- Hero image -->
 
-    <div class="intro-item">
-        <h3>Therapy for Healing Trauma</h3>
-        <p>Feel more in control of your life by</p>
-        <ul>
-            <li>Managing difficult emotions</li>
-            <li>Coping effectively with distress</li>
-            <li>Reducing anxiety</li>
-            <li>Alleviating low mood</li>
-            <li>Improving self esteem</li>
-        </ul>
-        <p>If this feels familiar you are welcome to get in touch for a free consultation</p>
-    </div>
+        <div class="intro-container">
 
-    <div class="intro-item">
-        <img src="assets/images/combined-conditions.webp" alt="Icons representing trauma symptoms like anxiety, low mood, and distress">
-    </div>
+            <div class="intro-item ">
+                <div class="site-title u-mt-lg">EMDR</div>
+            </div>
+
+            <div class="intro-item ">
+                <h3>Therapy for Healing Trauma</h3>
+                <p>Feel more in control of your life by</p>
+                <ul>
+                    <li>Managing difficult emotions</li>
+                    <li>Coping effectively with distress</li>
+                    <li>Reducing anxiety</li>
+                    <li>Alleviating low mood</li>
+                    <li>Improving self esteem</li>
+                </ul>
+                <p>If this feels familiar you are welcome to get in touch for a free consultation</p>
+            </div>
+
+            <div class="intro-item">
+                <img src="assets/images/combined-conditions.webp" alt="Icons representing trauma symptoms like anxiety, low mood, and distress">
+            </div>
 
 
-    <div class="intro-item">
-         <p>Helping you find freedom from painful memories, difficult emotions and unhelpful patterns.</p>
-    </div>
+            <div class="intro-item">
+                 <p>Helping you find freedom from painful memories, difficult emotions and unhelpful patterns.</p>
+            </div>
 
-    </div>
-
-    <div class="cta-container">
-        <article  class="cta-item">
-            <p>For more information please use the<a href="strega-contact.html"> contact form</a>.</p>
-        </article>
-    </div>
-</main>
-
-<a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-
-<footer>
-    <div id="footer-placeholder">
-        <div class="item-footer">
-          <p>&copy; 2026 Strega Health Ref: ns</p>
         </div>
-    </div>
-</footer>
 
+        <div class="cta-container">
+            <article  class="cta-item">
+                <p>For more information please use the<a href="strega-contact.html"> contact form</a>.</p>
+            </article>
+        </div>
+
+    </main>
+
+    <!-- FAB back to top -->
+    <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
+
+    <!-- Footer (web component) -->
+    <div class= "u-mt-lg">
+        <site-footer></site-footer>
+    </div>
 </div>
 
-<script>
-    fetch('strega-footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-</script>
+<!-- Scripts -->
+<script src="js/strega-main.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 </body>
 </html>

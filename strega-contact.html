@@ -1,103 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
+<!--strega using Oakwood Framework v4.1.0 -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="template" content="v3.0">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/custom.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Strega Health">
     <title>Contact Strega Health for EMDR Therapy</title>
-    <meta name="description" content="Contact page for Strega Health" >
+    <link rel="stylesheet" href="css/1-settings.css">
+    <link rel="stylesheet" href="css/2-base.css">
+    <link rel="stylesheet" href="css/3-components.css">
+    <link rel="stylesheet" href="css/4-utilities.css">
+    <link rel="stylesheet" href="css/5-custom.css">
 </head>
-
 <body>
-<div class="page-wrapper">
-    <header>
-        <div class="site-header">
-            <div class="header-center">
-                <div class="site-title"   id="top">
-                    <img src="assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
 
-                </div>
-            </div>
+    <!-- Top bar (if needed) -->
+
+    <!-- Header -->
+    <header class="site-header u-mb-sm">
+        <div class="header-center">
+            <img src="assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
         </div>
-
-        <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
-        </nav>
     </header>
 
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
+        <a href="strega-contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <!-- Hero image -->
+
+    <!-- Contact form -->
     <main>
-        <section class="content-container">
-            <div class="content-item">
+        <div class="container-contact u-mt-lg u-mb-section">
+            <div id="contact" class="item-contact">
                 <h2>Make Contact</h2>
                 <p>Please get in touch if you would like to explore EMDR therapy or have any question.
                 </p>
-
                 <p>Call me on 📞 <a href="tel:+44 7801434050">+44 (0)7801 434050</a> and leave a message if I am busy, or fill in the form below and I will get back to you as soon as I can.
                 </p>
-            </div>
+                <form action="https://submit-form.com/kouvuc6O3" method="POST">
 
-       </section>
+                    <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required aria-required="true">
 
-        <div class="container-contact">
-            <section id="contact" class="item-contact">
-                <form
-                action="https://submit-form.com/kouvuc6O3" method="POST"
-                >
-                <label for="name" class="required">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name" required aria-required="true">
+                    <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
+                    <input class="form-control form-control--lg" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required aria-required="true">
 
-                <label for="email" class="required">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
+                    <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
+                    <input class="form-control form-control--sm" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required aria-required="true">
 
-                <label for="phone" class="required">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Telephone number" required aria-required="true">
+                    <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
+                    <input class="form-control form-control--md" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required aria-required="true">
 
-                <label for="callback" class="required">Contact preference</label>
-                <input type="text" id="callback" name="callback" placeholder="Phone, Email or Text" required aria-required="true">
+                    <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required aria-required="true"></textarea>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Optional Message"></textarea>
+                    <!-- Redirect after successful submission -->
+                    <input type="hidden" name="_redirect" value="https://stregahealth.com/stregahealth-contact-success.html">
+                    <input type="hidden" name="_error" value="https://stregahealth.com/stregahealth-contact-error.html">
+                    <input type="hidden" name="_no-capture" value="true">
 
-                <p class="red-asterisk">Required</p>
+                    <p class="red-asterisk">Required</p>
 
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAACmTvUDW1sMUFfHY" data-callback="javascriptCallback" aria-label="Captcha Verification" ></div>
-                <button type="submit">Send</button>
+                    <div class="cf-turnstile u-mt-lg"
+                         data-sitekey="0x4AAAAAACmTvUDW1sMUFfHY"
+                         data-callback="turnstileReady"
+                         data-mode="managed">
+                    </div>
+
+                    <button type="submit" id="submit-button" class="button button--submit button--medium u-mt-lg u-mb-lg" >Send</button>
+
                 </form>
-            </section>
+            </div>
         </div>
-
-
     </main>
 
-        <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+    <!-- FAB back to top -->
+    <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
 
-    <footer>
-        <div id="footer-placeholder">
-            <div class="item-footer">
-              <p>&copy; 2026 Strega Health Ref: ns</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer (web component) -->
+    <div class= "u-mt-lg">
+        <site-footer></site-footer>
+    </div>
 
-    <script>
-        fetch('strega-footer.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('footer-placeholder').innerHTML = data;
-          })
-          .catch(error => console.error('Error loading footer:', error));
-    </script>
+    <!-- Scripts -->
+    <script src="js/strega-main.js"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
-    <script
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer>
-    </script>
-
-</div>
 </body>
 </html>
-

@@ -1,12 +1,14 @@
-/*Oakwood ltd Framework v3.0 custom.css */
+/*  5-custom.css
+    bbees
+    Oakwood Framework v4.1.0
+    Single-purpose helpers. Always win the cascade — important is fine here.
+    Differs per client.
+*/
 
-/* strega site specific */
-
-/* Overrides */
-:root {
-  /* custom tokens if needed */
-    --title-align: center;
-    --heading-align: center;
+@media (max-width: 1024px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .page-wrapper {
@@ -23,12 +25,3 @@
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
-    .site-title {
-        font-size: 2rem;
-    }
-
-    .header-center img {
-        width: 100px;
-    }
-}
