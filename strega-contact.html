@@ -44,19 +44,19 @@
                 <form action="https://submit-form.com/kouvuc6O3" method="POST">
 
                     <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required aria-required="true">
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
 
                     <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
-                    <input class="form-control form-control--lg" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required aria-required="true">
+                    <input class="form-control" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required>
 
                     <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
-                    <input class="form-control form-control--sm" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required aria-required="true">
+                    <input class="form-control form-control--small" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required>
 
                     <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
-                    <input class="form-control form-control--md" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required aria-required="true">
+                    <input class="form-control form-control--medium" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required>
 
                     <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
-                    <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required aria-required="true"></textarea>
+                    <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required></textarea>
 
                     <!-- Redirect after successful submission -->
                     <input type="hidden" name="_redirect" value="https://stregahealth.com/strega-contact-success.html">
@@ -66,9 +66,7 @@
                     <p class="red-asterisk">Required</p>
 
                     <div class="cf-turnstile u-mt-lg"
-                         data-sitekey="0x4AAAAAACmTvUDW1sMUFfHY"
-                         data-callback="turnstileReady"
-                         data-mode="managed">
+                         data-sitekey="0x4AAAAAACmTvUDW1sMUFfHY">
                     </div>
 
                     <button type="submit" id="submit-button" class="button button--submit button--medium u-mt-lg u-mb-lg" >Send</button>

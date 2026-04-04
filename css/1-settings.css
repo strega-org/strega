@@ -56,7 +56,7 @@
     --font-fluid-small:  clamp(0.875rem, 0.8vw + 0.75rem, 1rem);     /* captions, labels */
     --font-fluid-body:   clamp(1rem, 1vw + 0.75rem, 1.125rem);        /* paragraphs */
     --font-fluid-medium: clamp(1.125rem, 1.5vw + 0.9rem, 1.4rem);     /* intro, subheadings */
-    --font-fluid-large: clamp(2rem, 2.8vw + 1.2rem, 3.2rem);         /*exra large CTA, page titles */
+    --font-fluid-large:  clamp(1.6rem, 2vw + 1.2rem, 2.2rem);         /*exra large CTA, page titles */
 
     --shadow-light: 0 0 10px rgba(0,0,0,0.1);
     --shadow-medium: 0 4px 12px rgba(0,0,0,0.15);

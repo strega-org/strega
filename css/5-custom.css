@@ -5,11 +5,21 @@
     Differs per client.
 */
 
+
+root: {
+    --font-fluid-xlarge: clamp(2rem, 2.8vw + 1.2rem, 3.2rem);
+}
+
+
+
+
 @media (max-width: 1024px) {
     .card-grid {
         grid-template-columns: 1fr;
     }
 }
+
+
 
 .page-wrapper {
   max-width: 900px;
@@ -27,4 +37,5 @@
 
 .content-item h3 {
     text-align: center;
+    font-size: var(--font-fluid-xlarge);
 }

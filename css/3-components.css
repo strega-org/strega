@@ -252,6 +252,7 @@ nav a:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow-light);
     padding-inline: var(--spacing-inline);
     padding-block: var(--spacing-block);
     align-items: stretch;
@@ -261,7 +262,6 @@ nav a:hover {
     width: 100%;
     padding: var(--spacing-content);
     background-color: var(--bg-inner);
-    box-shadow: var(--shadow-light);
     margin: 0 auto;
 }
 
@@ -277,7 +277,6 @@ nav a:hover {
 
 .content-item figure {
     margin: var(--spacing-section) 0 var(--spacing-block);
-    box-shadow: none;
     background: none;
 }
 
