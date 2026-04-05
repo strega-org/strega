@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact page for Strega Health">
     <title>Contact Strega Health for EMDR Therapy</title>
-    <link rel="stylesheet" href="css/1-settings.css">
-    <link rel="stylesheet" href="css/2-base.css">
-    <link rel="stylesheet" href="css/3-components.css">
-    <link rel="stylesheet" href="css/4-utilities.css">
-    <link rel="stylesheet" href="css/5-custom.css">
+    <link rel="stylesheet" href="/css/1-settings.css">
+    <link rel="stylesheet" href="/css/2-base.css">
+    <link rel="stylesheet" href="/css/3-components.css">
+    <link rel="stylesheet" href="/css/4-utilities.css">
+    <link rel="stylesheet" href="/css/5-custom.css">
 </head>
 <body>
 
@@ -19,23 +19,23 @@
     <!-- Header -->
     <header class="site-header u-mb-sm">
         <div class="header-center">
-            <img src="assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
+            <img src="/assets/images/logo.webp" alt="Strega Health logo" height="200" width="600">
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
-        <a href="strega-contact.html" aria-current="page">Contact</a>
+    <nav class="top-nav" aria-label="Main navigation">
+        <a href="/index.html">Home</a>
+        <a href="/pages/p001-0-Adaptive-Information-Processing/explore.html">Explore</a>
+        <a href="/strega-contact.html" aria-current="page">Contact</a>
     </nav>
 
     <!-- Hero image -->
 
     <!-- Contact form -->
     <main>
-        <div class="container-contact u-mt-lg u-mb-section">
-            <div id="contact" class="item-contact">
+        <div class="contact-container u-mt-lg u-mb-section">
+            <div id="contact" class="contact-item">
                 <h2>Make Contact</h2>
                 <p>Please get in touch if you would like to explore EMDR therapy or have any question.
                 </p>
@@ -44,19 +44,20 @@
                 <form action="https://submit-form.com/kouvuc6O3" method="POST">
 
                     <label for="name" class="form-label form-label--required u-mt-lg u-mb-xs">Name</label>
-                    <input class="form-control" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
+                    <input class="form-control form-control--large" type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
 
                     <label for="email" class="form-label form-label--required u-mt-lg u-mb-xs">Email</label>
-                    <input class="form-control" type="email" id="email" name="_replyto" placeholder="Email" autocomplete="email" required>
+                    <input class="form-control form-control--large" type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
 
                     <label for="phone" class="form-label form-label--required u-mt-lg u-mb-xs">Phone</label>
-                    <input class="form-control form-control--small" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required>
+                    <input class="form-control form-control--medium" type="tel" id="phone" name="phone" placeholder="Telephone number" autocomplete="tel" required>
 
                     <label for="callback" class="form-label form-label--required u-mt-lg u-mb-xs">Contact preference</label>
                     <input class="form-control form-control--medium" type="text" id="callback" name="callback" placeholder="Phone, Email, Text Msg..." required>
 
                     <label for="message" class="form-label form-label--required u-mt-lg u-mb-xs">Message</label>
                     <textarea class="form-control" id="message" name="message" placeholder="How can I help you?" required></textarea>
+
 
                     <!-- Redirect after successful submission -->
                     <input type="hidden" name="_redirect" value="https://stregahealth.com/strega-contact-success.html">
@@ -80,12 +81,12 @@
     <a class="fab fab--bottom-right fab--pill" href="#top" aria-label="Back to top">↑</a>
 
     <!-- Footer (web component) -->
-    <div class= "u-mt-lg">
-        <site-footer></site-footer>
+    <div class="u-mt-lg">
+        <footer-site>Strega Health Ref:no-js</footer-site>
     </div>
 </div>
     <!-- Scripts -->
-    <script src="js/strega-main.js"></script>
+    <script src="/js/strega-main.js"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
 </body>

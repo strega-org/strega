@@ -6,6 +6,8 @@
 :root {
 
     --site-max-width: 900px;
+    --block-max-width: 800px;
+    --content-max-width: 600px;
 
     /* Responsive spacing */
     --space-1: clamp(4px, 0.4vw, 6px); /* tiny */
@@ -56,7 +58,8 @@
     --font-fluid-small:  clamp(0.875rem, 0.8vw + 0.75rem, 1rem);     /* captions, labels */
     --font-fluid-body:   clamp(1rem, 1vw + 0.75rem, 1.125rem);        /* paragraphs */
     --font-fluid-medium: clamp(1.125rem, 1.5vw + 0.9rem, 1.4rem);     /* intro, subheadings */
-    --font-fluid-large:  clamp(1.6rem, 2vw + 1.2rem, 2.2rem);         /*exra large CTA, page titles */
+    --font-fluid-large:  clamp(1.6rem, 2vw + 1.2rem, 2.2rem);         /* CTA, page titles */
+    --font-fluid-xlarge: clamp(2.4rem, 3.6vw + 1.2rem, 4rem);
 
     --shadow-light: 0 0 10px rgba(0,0,0,0.1);
     --shadow-medium: 0 4px 12px rgba(0,0,0,0.15);
@@ -88,6 +91,16 @@
     --text-button-hover: white;
     --button-radius: 25px;
 
+
+    --fab-bg: #CF8584;
+    --fab-text: #2E1F1F;
+    --fab-bg-hover: #CF8584;
+    --fab-text-hover: white;
+
+    --fab-shadow: var(--shadow-medium);
+    --fab-offset: var(--spacing-block);
+
+
     --link-color: blue;
     --link-hover-color: navy;
 
@@ -103,7 +116,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('../assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
+    src: url('/assets/fonts/montserrat-v29-latin-regular.woff2') format('woff2');
 }
 /* montserrat-italic - latin */
 @font-face {
@@ -111,7 +124,7 @@
     font-family: 'Montserrat';
     font-style: italic;
     font-weight: 400;
-    src: url('../assets/fonts/montserrat-v29-latin-italic.woff2') format('woff2');
+    src: url('/assets/fonts/montserrat-v29-latin-italic.woff2') format('woff2');
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -119,7 +132,7 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('../assets/fonts/montserrat-v29-latin-700.woff2') format('woff2');
+    src: url('/assets/fonts/montserrat-v29-latin-700.woff2') format('woff2');
 }
 
 @font-face {
