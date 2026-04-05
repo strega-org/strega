@@ -16,25 +16,9 @@ class SiteFooter extends HTMLElement {
         `;
     }
 }
-
-
-
-class SiteFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-            <div class="item-footer">
-                <p><strong><p>📞 <a href="tel:+44 7801434050">+44 (0)7801 434050</a></strong></p>
-                <p>✉️ <a href="mailto:reachme@stregahealth.com">reachme@stregahealth.com</a></p>
-                <p>&copy; 2026 Strega Health. All rights reserved.</p>
-            </div>
-        `;
-    }
-}
-
-customElements.define('site-footer', SiteFooter);
+customElements.define('footer-site', SiteFooter);
 
 const fabs = document.querySelectorAll('.fab');
-
 window.addEventListener('scroll', () => {
     fabs.forEach(fab => {
         fab.classList.toggle('fab--visible', window.scrollY > 300);
