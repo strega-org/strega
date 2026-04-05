@@ -8,7 +8,7 @@ class SiteFooter extends HTMLElement {
         this.innerHTML = `
             <footer class="footer-site">
                 <div class="footer-item">
-                    p><strong><p>📞 <a href="tel:+44 7801434050">+44 (0)7801 434050</a></strong></p>
+                    <p><strong><p>📞 <a href="tel:+44 7801434050">+44 (0)7801 434050</a></strong></p>
                 <p>✉️ <a href="mailto:reachme@stregahealth.com">reachme@stregahealth.com</a></p>
                 <p>&copy; 2026 Strega Health. All rights reserved.</p>
                 </div>
