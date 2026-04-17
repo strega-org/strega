@@ -87,8 +87,8 @@
 
     --bg-button: #CF8584;
     --bg-button-hover: #CF8584;
-    --text-button: #2E1F1F;
-    --text-button-hover: white;
+    --text-button: white;
+    --text-button-hover:#2E1F1F ;
     --button-radius: 25px;
 
 
