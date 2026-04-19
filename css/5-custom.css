@@ -16,6 +16,7 @@ root: {
 @media (max-width: 1024px) {
     .card-grid {
         grid-template-columns: 1fr;
+
     }
 }
 
@@ -37,5 +38,5 @@ root: {
 
 .content-item h3 {
     text-align: center;
-    font-size: var(--font-fluid-xlarge);
+    font-size: var(--font-fluid-small);
 }
